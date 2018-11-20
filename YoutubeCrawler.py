@@ -4,7 +4,8 @@ from urllib.request import urlopen as req
 viewFirst = []
 likes = []
 dislikes = []
-playlistURLS = [] # Insert the end of the playlist link
+playlistUrls = [] # Insert the ID of the playlist (for example:
+# the ID of https://www.youtube.com/watch?v=Qyclqo_AV2M&list=PLmo4pBukfRoN8SB5RKvfiY9CTl9pI_IFc is PLmo4pBukfRoN8SB5RKvfiY9CTl9pI_IFc)
 for url in (playlistUrls):
     urlPlaylist = "https://m.youtube.com/playlist?list="+url
     client = req(urlPlaylist)
